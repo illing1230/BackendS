@@ -1,6 +1,5 @@
 # BackendStudy
 
-```.txt
 Kubernetes와 Docker를 함께 사용하기 위해 공부해야 할 핵심 개념들을 정리해 드릴게요.
 Docker 기초 개념
 컨테이너화 기본 이해가 가장 중요합니다. Dockerfile 작성법, 이미지 빌드, 컨테이너 실행, 네트워킹, 볼륨 마운트 등을 익혀야 합니다. 특히 멀티스테이지 빌드와 이미지 최적화 기법도 중요하죠.
@@ -13,15 +12,16 @@ Kubernetes 핵심 개념
 리소스 관리는 필수입니다. CPU, 메모리 requests/limits 설정, HPA(Horizontal Pod Autoscaler), VPA(Vertical Pod Autoscaler) 등을 배우세요.
 보안도 중요합니다. RBAC, SecurityContext, Network Policies, Pod Security Standards 등을 이해해야 합니다.
 모니터링과 로깅을 위해 Prometheus, Grafana, ELK 스택 등의 도구들도 익혀두면 좋습니다.
+
 추천 학습 순서
 
-Docker 기초 - 컨테이너 개념부터 Dockerfile 작성까지
-Kubernetes 아키텍처 이해 - 마스터 노드, 워커 노드, etcd 등
-기본 오브젝트 실습 - kubectl로 Pod, Deployment 등 생성/관리
-네트워킹과 서비스 디스커버리
-스토리지와 상태 관리
-헬름(Helm) 패키지 매니저
-운영 도구들 - 모니터링, 로깅, CI/CD
+1.Docker 기초 - 컨테이너 개념부터 Dockerfile 작성까지
+2.Kubernetes 아키텍처 이해 - 마스터 노드, 워커 노드, etcd 등
+3.기본 오브젝트 실습 - kubectl로 Pod, Deployment 등 생성/관리
+4.네트워킹과 서비스 디스커버리
+5.스토리지와 상태 관리
+6. 헬름(Helm) 패키지 매니저
+7.운영 도구들 - 모니터링, 로깅, CI/CD
 
 실습 환경은 minikube나 kind로 로컬에서 시작하시고, 나중에 EKS, GKE, AKS 같은 관리형 서비스로 확장하시면 됩니다.
 
@@ -36,7 +36,8 @@ Docker의 핵심 구성요소를 이해해야 합니다:
 
 Docker 기본 명령어
 먼저 이런 명령어들을 익혀보세요:
-```
+
+
 ```.py
 # 이미지 다운로드
 docker pull nginx
